@@ -7,45 +7,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <title>CapsGift</title>
-<script type="module" src="scripts/background.js"></script>
 <link rel="stylesheet" href="index.css">
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-
-<canvas id="stars"></canvas>
-
 <div id="app">
-    <div class="carousel">
+<div class="timer">
+<div class="timer-inline-block">
+<b>
+    <span class="day" id="days"></span>
+    <span class="days">DAYS</span>
+    <span class="seconds">S</span>
+    <span class="second" id="seconds"></span>
+    <span class="minutes">M</span>
+    <span class="minute" id="minutes"></span>
+    <span class="hours">H</span>
+    <span class="hour" id="hours"></span>
+</b>
+</div>
+</div>
 
-        <div class="carousel-inner" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
-            <img class="stickers" v-for="(photo, index) in photos" :key="index" :src="photo" alt="Photo"/>
-        </div>
+<div class="carousel">
+    <div class="carousel-inner" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
+        <img loading="eager" class="stickers" v-for="(photo, index) in photos" :key="index" :src="photo" alt="Photo"/>
+    </div>
         <button @click="prev" class="carousel-control prev"></button>
         <button @click="next" class="carousel-control next"></button>
-    </div>
 </div>
 
-<div class="timer" id="timer">
-    <b>
-    <span class="day" id="days"></span>
-    <p class="days">DAYS</p>
-<div class="xyeta">
-    <span class="hours" id="hours"></span>
-    <p class="h">H</p> 
-    <span class="minutes" id="minutes"></span>
-    <p class="m">M</p>
-    <span class="seconds" id="seconds"></span>
-    <p class="s">S</p>
-</div>
-    </b>
-</div>
 <script type="module" src="scripts/timer.js"></script>
 
+<center>
 <a href="gift.html">
 <button class="giveaway">Participate in Giveaway</button>
 </a>
+</center>
+</div>
 
 </body>
 </html>
