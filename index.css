@@ -25,7 +25,7 @@ a {
   background-color: black;
   position: relative;
   overflow: hidden;
-  margin-top: 55px;
+  margin-top: 75px;
 }
   
 .carousel-inner {
@@ -126,7 +126,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 5px; 
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .days {
