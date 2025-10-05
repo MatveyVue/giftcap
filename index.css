@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   touch-action: none;
   background-color: black;
+  user-select: none;
 }
 
 a {
