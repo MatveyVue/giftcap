@@ -8,20 +8,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CapsGift</title> 
 <script type="module" src="/scripts/send.js"></script>
-<script type="module" src="scripts/background.js"></script>
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<canvas id="stars"></canvas>
-
 <form id="entryForm">
-    <input class="wallet" style="font-size: 16px;" id="Wallet" type="text" placeholder="  Your Wallet" required><br>
-    <button href="#" class="pysto"></button><br>
+    <h1>Enter Your Wallet Ton</h1>
+    <input class="wallet" style="font-size: 16px;" id="Wallet" type="text" placeholder="  Your Ton Wallet" required><br>
     <a href="index.html">
-    <button class="send" type="submit" id="send"><b>Send Wallet</b></button>
+        <button class="send" type="submit" id="send"><b>Send Wallet</b></button>
     </a>
 </form>
+
+<style>
+h1 {
+    font-family: Geologica;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+</style>
 
 </body>
 </html>
