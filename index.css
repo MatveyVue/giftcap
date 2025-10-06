@@ -88,7 +88,7 @@ img {
   background-color: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
-  margin-bottom: -10vw;
+  margin-bottom: -5vw;
   width: 93%; 
   height: 45px;
   border: none;
@@ -106,7 +106,7 @@ img {
   background-color: rgb(37, 37, 37);
   position: absolute;
   bottom: 0;
-  margin-bottom: -25vw;
+  margin-bottom: -15vw;
   width: 93%; 
   height: 45px;
   border: none;
