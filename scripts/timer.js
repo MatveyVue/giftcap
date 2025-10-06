@@ -1,4 +1,4 @@
-const targetDate = new Date(`October 16, ${new Date().getFullYear() + 0} 23:59:59`).getTime();
+const targetDate = new Date(`October 21, ${new Date().getFullYear() + 0} 23:59:59`).getTime();
 
         // Кэшируем DOM-элементы, чтобы не искать их на каждой секунде
         const daysEl = document.getElementById('days');
