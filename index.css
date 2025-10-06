@@ -9,7 +9,6 @@ body {
   background-attachment: fixed;
   touch-action: none;
   background-color: black;
-  user-select: none;
 }
 
 a {
@@ -32,7 +31,7 @@ a {
   background-color: black;
   position: relative;
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 12vw;
 }
   
 .carousel-inner {
@@ -103,6 +102,24 @@ img {
   cursor: pointer;
 }
 
+.task {
+  background-color: rgb(37, 37, 37);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -110px;
+  width: 93%; 
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  font-family: Geologica;
+  color: white;
+  font-size: 16px;
+  left: 50%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
 .buy {
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -154,7 +171,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .seconds {
@@ -165,7 +182,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .minute {
@@ -176,7 +193,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .minutes {
@@ -187,7 +204,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .hour {
@@ -198,7 +215,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .hours {
@@ -209,7 +226,7 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 
@@ -221,8 +238,8 @@ img {
   background-color: rgb(21, 21, 21);
   opacity: 80%;
   border: none;
-  height: 50px;
-  width: 95vw;
+  height: 45px;
+  width: 90vw;
   border-radius: 15px;
   font-family: Geologica;
   color: white;
@@ -240,7 +257,7 @@ img {
   font-size: 16px;
   position: absolute;
   bottom: 0;
-  top: 90vh;
+  top: 95vh;
   left: 50%;
   transform:translate(-50%, -50%);
   
