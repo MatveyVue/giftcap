@@ -20,11 +20,17 @@ a {
   max-width: 500px;
   background-color: black;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.stickers:hover {
-  transform: translateY(-5px);
+.next:active .stickers { 
+  transform: rotateY(-20px);
 }
+
+.prev:active .stickers { 
+  transform: rotateY(-20px);
+}
+
 
 .backdrop {
   width: 100%;
