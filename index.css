@@ -109,7 +109,7 @@ img {
   font-size: 16px;
   max-width: 500px;
   cursor: pointer;
-  top: 88vh;
+  top: 90vh;
   left: 50%;
   transform:translate(-50%, -50%);
 }
@@ -128,7 +128,7 @@ img {
   font-size: 16px;
   max-width: 500px;
   cursor: pointer;
-  top: 95vh;
+  top: 94vh;
   left: 50%;
   transform:translate(-50%, -50%);
 }
