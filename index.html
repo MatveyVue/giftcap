@@ -2,35 +2,73 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://telegram.org/js/telegram-web-app.js?2"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CapsGift</title> 
-<script type="module" src="scripts/background.js"></script>
-<script type="module" src="/scripts/send.js"></script>
+<title>CapsGift</title>
 <link rel="stylesheet" href="index.css">
+<script type="module" src="scripts/background.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script type="module" src="scripts/main.js"></script>
 </head>
 <body>
 <canvas id="stars"></canvas>
-<form id="entryForm">
-    <h1>Enter Your Wallet Ton</h1>
-    <input class="wallet" style="font-size: 16px;" id="Wallet" type="text" placeholder="  Your Ton Wallet" required><br>
-    <a href="index.html">
-        <button class="send" type="submit" id="send"><b>Send Wallet</b></button>
-    </a>
-</form>
+<div id="app">
+<div id="preloader">
+  <div style="margin-top: -20px;" class="loader">loading</div>
+</div>
+<div class="timer">
+<div class="timer-inline-block">
+<b>
+    <span class="day" id="days"></span>
+    <span class="days">DAYS</span>
+    <span class="seconds">S</span>
+    <span class="second" id="seconds"></span>
+    <span class="minutes">M</span>
+    <span class="minute" id="minutes"></span>
+    <span class="hours">H</span>
+    <span class="hour" id="hours"></span>
+</b>
+</div>
+</div>
 
-<style>
-h1 {
-    font-family: Geologica;
-    color: white;
-    font-size: 22px;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 8px;
-}
-</style>
+<div class="backdrop">
+<div class="carousel">
+    <div class="carousel-inner" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
+        <img loading="eager" class="stickers" v-for="(photo, index) in photos" :key="index" :src="photo" alt="Photo"/>
+    </div>
+        <button @click="prev" class="carousel-control prev"></button>
+        <button @click="next" class="carousel-control next"></button>
+</div>
+</div>
 
+<script type="module" src="scripts/timer.js"></script>
+
+<center>
+<a href="gift.html">
+    <button class="giveaway">Participate in Giveaway</button>
+</a>
+<a href="javascript:Telegram.WebApp.shareToStory('https://github.com/MatveyVue/giftcap/blob/main/CapStory.jpeg?raw=true',{text:'Enter the NFT Hate Caps giveaway at @hatecapsbot'});">
+    <button class="task">Share To Story</button>
+</a>
+</center>
+</div>
+
+
+<script>
+window.addEventListener('load', function() {
+    // Убираем стандартное поведение при загрузке, т.к. будем использовать setTimeout
+});
+
+// Устанавливаем таймер на 10 секунд (10000 миллисекунд)
+setTimeout(function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) { // Проверяем, существует ли элемент
+        preloader.classList.add('hidden'); // Добавляем класс для скрытия
+    }
+}, 5000); // 10000 миллисекунд = 10 секунд
+    </script>
 </body>
 </html>
