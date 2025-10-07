@@ -109,8 +109,9 @@ img {
   font-size: 16px;
   max-width: 500px;
   cursor: pointer;
-  top: 86vh;
+  top: 90vh;
   left: 50%;
+  margin-top: -17px;
   transform:translate(-50%, -50%);
 }
 
@@ -128,8 +129,9 @@ img {
   font-size: 16px;
   max-width: 500px;
   cursor: pointer;
-  top: 95vh;
+  top: 90vh;
   left: 50%;
+  margin-top: 38px;
   transform:translate(-50%, -50%);
 }
 
