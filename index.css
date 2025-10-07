@@ -96,10 +96,11 @@ img {
   font-family: Geologica;
   color: black;
   font-size: 16px;
-  left: 50%;
   max-width: 500px;
-  transform: translate(-50%, -50%);
   cursor: pointer;
+  top: 87vh;
+  left: 50%;
+  transform:translate(-50%, -50%);
 }
 
 .task {
@@ -114,10 +115,11 @@ img {
   font-family: Geologica;
   color: white;
   font-size: 16px;
-  left: 50%;
   max-width: 500px;
-  transform: translate(-50%, -50%);
   cursor: pointer;
+  top: 95vh;
+  left: 50%;
+  transform:translate(-50%, -50%);
 }
 
 .buy {
