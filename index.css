@@ -42,7 +42,7 @@ a {
 .carousel {
   position: relative;
   overflow: hidden;
-  margin-top: 25vw;
+  margin-top: 20vw;
 }
   
 .carousel-inner {
@@ -176,6 +176,8 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 10px;
+  top: 0;
+  position: fixed;
 }
 
 .second {
@@ -186,7 +188,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -15px;
 }
 
 .seconds {
@@ -197,7 +198,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -15px;
 }
 
 .minute {
@@ -208,7 +208,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -15px;
 }
 
 .minutes {
@@ -219,7 +218,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -15px;
 }
 
 .hour {
@@ -230,7 +228,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 2%;
-  margin-top: -15px;
 }
 
 .hours {
@@ -241,7 +238,12 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 3%;
-  margin-top: -15px;
+}
+
+.time {
+  display: block; 
+  text-align: center;
+  margin-top: -5px;
 }
 
 
