@@ -165,7 +165,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 5px; 
-  margin-left: 17%;
+  margin-left: 15%;
 }
 
 .days {
@@ -175,7 +175,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   float: right;
-  margin-right: 15px;
+  margin-right: 18px;
   top: 0;
   position: fixed;
 }
