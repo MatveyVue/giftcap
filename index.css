@@ -42,7 +42,7 @@ a {
 .carousel {
   position: relative;
   overflow: hidden;
-  margin-top: 18vw;
+  margin-top: 25vw;
 }
   
 .carousel-inner {
@@ -165,7 +165,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 5px; 
-  margin-left: 18%;
+  margin-left: 17%;
 }
 
 .days {
@@ -176,7 +176,6 @@ img {
   vertical-align: baseline;
   float: right;
   margin-right: 10px;
-  margin-top: -1px;
 }
 
 .second {
