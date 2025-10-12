@@ -25,7 +25,6 @@ a {
 }
 
 .stickers
-  margin-top: 50px;
   width: 100%;
   max-width: 500px;
   cursor: pointer;
@@ -43,7 +42,7 @@ a {
 .carousel {
   position: relative;
   overflow: hidden;
-  margin-top: 12vw;
+  margin-top: 25vw;
 }
   
 .carousel-inner {
