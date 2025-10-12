@@ -24,7 +24,8 @@ a {
   text-decoration: none;
 }
 
-.stickers {
+.stickers
+  margin-top: 50px;
   width: 100%;
   max-width: 500px;
   cursor: pointer;
