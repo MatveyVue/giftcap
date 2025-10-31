@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="index.css">
 <script type="module" src="scripts/background.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js" defer></script>
+<script type="module" src="scripts/transaction.js"></script>
 <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
@@ -43,15 +45,16 @@
         <button @click="prev" class="carousel-control prev"></button>
         <button @click="next" class="carousel-control next"></button>
 </div>
+<div style="display: none;" id="ton-connect"></div>
+
+<script type="module" src="scripts/timer.js"></script>
 
 <script type="module" src="scripts/timer.js"></script>
 
 <center>
-<a href="">
-    <button class="giveaway">Participate in Giveaway</button>
-</a>
-<a href="javascript:Telegram.WebApp.shareToStory('https://github.com/MatveyVue/giftcap/blob/main/CapStory.jpeg?raw=true',{text:'Enter the NFT Hate Caps giveaway at @hatecapsbot'});">
-    <button class="task">Share To Story</button>
+<button onclick="handlePayment()" class="giveaway">Send Transaction</button>
+<a href="wallet.html">
+    <button class="task">Wallet</button>
 </a>
 </center>
 </div>
