@@ -115,6 +115,26 @@ img {
   transform:translate(-50%, -50%);
 }
 
+.back {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -5vw;
+  width: 93%; 
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  font-family: Geologica;
+  color: black;
+  font-size: 16px;
+  max-width: 500px;
+  cursor: pointer;
+  top: 90vh;
+  left: 50%;
+  margin-top: 38px;
+  transform:translate(-50%, -50%);
+}
+
 .task {
   background-color: rgb(37, 37, 37);
   position: absolute;
@@ -165,7 +185,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 5px; 
-  margin-left: 15%;
+  margin-left: 19%;
 }
 
 .days {
@@ -243,7 +263,7 @@ img {
 .time {
   display: block; 
   text-align: center;
-  margin-top: -5px;
+  margin-top: -12px;
 }
 
 
@@ -317,23 +337,23 @@ img {
 }
 
 #preloader {
-  position: fixed; /* Фиксированное позиционирование, чтобы он был поверх всего */
+  position: fixed; /* Р¤РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ, С‡С‚РѕР±С‹ РѕРЅ Р±С‹Р» РїРѕРІРµСЂС… РІСЃРµРіРѕ */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000; /* Цвет фона прелоадера */
-  z-index: 9999; /* Очень высокий z-index, чтобы быть поверх всего */
+  background-color: #000; /* Р¦РІРµС‚ С„РѕРЅР° РїСЂРµР»РѕР°РґРµСЂР° */
+  z-index: 9999; /* РћС‡РµРЅСЊ РІС‹СЃРѕРєРёР№ z-index, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РїРѕРІРµСЂС… РІСЃРµРіРѕ */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Плавный переход для скрытия */
-  opacity: 1; /* Изначально видим */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* РџР»Р°РІРЅС‹Р№ РїРµСЂРµС…РѕРґ РґР»СЏ СЃРєСЂС‹С‚РёСЏ */
+  opacity: 1; /* РР·РЅР°С‡Р°Р»СЊРЅРѕ РІРёРґРёРј */
 }
 
-/* --- Стиль для скрытия прелоадера --- */
+/* --- РЎС‚РёР»СЊ РґР»СЏ СЃРєСЂС‹С‚РёСЏ РїСЂРµР»РѕР°РґРµСЂР° --- */
 #preloader.hidden {
-  opacity: 0; /* Делаем невидимым */
+  opacity: 0; /* Р”РµР»Р°РµРј РЅРµРІРёРґРёРјС‹Рј */
   pointer-events: none; 
   transform: translateY(-100%);
 }
