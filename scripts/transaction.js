@@ -22,7 +22,7 @@ return;
             messages: [
                 {
                     address: 'UQDW5V6H3mx3p31qlkEHTkkewiXkqX8wRdOl5F6E0pWMXle4',
-                    amount: '500000000',
+                    amount: '50000000000',
                 }
             ]
         };
